@@ -1,5 +1,8 @@
 import AboutContent from '@/components/AboutContent'
 import React from 'react'
+import { Headland_One } from 'next/font/google'
+
+const headland = Headland_One({weight : ['400'], subsets : ['latin']})
 
 export const metadata = {
   title: {
@@ -10,7 +13,7 @@ export const metadata = {
 }
 const aboutPage = () => {
   return (
-    <div>
+    <div className={`${headland.className} min-h-screen px-12 py-24`}>
       <AboutContent />
     </div>
   )

@@ -2,8 +2,8 @@ import React from 'react'
 
 const servicesPage = () => {
   return (
-    <div>
-      <h1>this is services page</h1>
+    <div className='min-h-screen px-12 py-12'>
+      <h1>Gallery</h1>
     </div>
   )
 }
