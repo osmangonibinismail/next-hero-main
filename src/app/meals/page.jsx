@@ -1,7 +1,10 @@
 import Meals from '@/components/Meals'
 import React from 'react'
 import styles from './styles.module.css'
-
+export const metadata = {
+    title: 'Meals',
+    description: "Meal Page"
+  }
 const mealsPage = () => {
   return (
     <div className='p-12'>

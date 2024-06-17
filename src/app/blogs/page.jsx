@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+    title: 'Blogs | Next hero',
+    description: "Blog Page"
+  }
 const blogsPage = () => {
     return (
         <div className='p-24'>
