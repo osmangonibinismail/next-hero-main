@@ -29,4 +29,4 @@ const aboutPage = async () => {
   )
 }
 
-export default aboutPage
+export default aboutPage;
