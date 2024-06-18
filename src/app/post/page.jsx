@@ -7,11 +7,11 @@ export const metadata = {
     description: "This isPost page"
 }
 const getPosts = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts`);
     const data = await res.json();
-    if (!data) {
-        redirect(`/post/${data[0].id}`)
-    }
+    // if (!data) {
+    //     redirect(`/post/${data[0].id}`)
+    // }
     return data;
 };
 
